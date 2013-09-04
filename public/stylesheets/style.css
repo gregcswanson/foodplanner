@@ -1,0 +1,30 @@
+body {
+  padding: 20px;
+  font: 16px Helvetica, Arial, sans-serif;
+  color: #2ba6cb;
+}
+a {
+  color: #00B7FF;
+}
+li.activemenu {
+  background: #2ba6cb;
+  border-color: #2284a1;
+}
+li.activemenu > a {
+  color: white;
+  cursor: default;
+}
+li.activemenu:hover {
+  background: #44BBDD;
+  cursor: default;
+}
+div.expanded-menu {
+  background: #2ba6cb;
+  margin-top: -30px;
+}
+div.expanded-menu a {
+  color: white;
+}
+body {
+  padding: 10px;
+}

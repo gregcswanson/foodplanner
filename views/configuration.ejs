@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/foundation/foundation.min.css' />
+    <link rel="stylesheet" href="/fonts/foundation/general_foundicons.css">
+  </head>
+  <body>
+    <div class="row">
+        <div class="twelve columns">
+            <h1>Configuration</h1>
+        </div>
+    </div>
+    <form class="simple-form" method="post" action="/configuration">
+        <div class="row">
+            <div class="panel">
+                <h5>Restart Required</h5>
+                <p>The server needs to be restarted for these settings to take effect</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label>Configuration Password</label>
+            </div>
+            <div class="eight columns">
+                <input type="password" placeholder="change password" name="password" value="<%= password %>" />
+            </div>    
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label>Callback Url</label>
+            </div>
+            <div class="eight columns">
+                <input type="text" placeholder="http://www.example.com/" name="callbackurl" value="<%= callbackurl %>" />
+            </div>  
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label>Secret</label>
+            </div>
+            <div class="eight columns">
+                <input type="text" placeholder="Secret" name="secret" value="<%= secret %>" />
+            </div>  
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label>Storage Name</label>
+            </div>
+            <div class="eight columns">
+                <input type="text" placeholder="Name" name="storagename" value="<%= name %>" />
+            </div>  
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label>Storage Key</label>
+            </div>
+            <div class="eight columns">
+                <input type="text" placeholder="Key" name="storagekey" value="<%= key %>" />
+            </div>  
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label>MongoDB Server</label>
+            </div>
+            <div class="eight columns">
+                <input type="text" placeholder="server" name="mongodbserver" value="<%= mongodbserver %>" />
+            </div>  
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label>MongoDB Port</label>
+            </div>
+            <div class="eight columns">
+                <input type="text" placeholder="port" name="mongodbport" value="<%= mongodbport %>" />
+            </div>  
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label>MongoDB Database</label>
+            </div>
+            <div class="eight columns">
+                <input type="text" placeholder="database" name="mongodbdatabase" value="<%= mongodbdatabase %>" />
+            </div>  
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label>MongoDB Username</label>
+            </div>
+            <div class="eight columns">
+                <input type="text" placeholder="user name" name="mongodbusername" value="<%= mongodbusername %>" />
+            </div>  
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label>MongoDB Password</label>
+            </div>
+            <div class="eight columns">
+                <input type="text" placeholder="password" name="mongodbpassword" value="<%= mongodbpassword %>" />
+            </div>  
+        </div>
+        <div class="row">
+            <div class="four columns">
+            </div>
+            <div class="eight columns">
+		        <input type="submit" class="small button" value="save" />
+                <a class="small secondary button" href="/configuration/logout" >logout</a>
+            </div>  
+        </div>
+    </form>
+  </body>
+</html>

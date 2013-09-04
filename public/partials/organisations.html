@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="twelve columns">
+        <ul class="breadcrumbs">
+            <li><a href="#/menu">Menu</a></li>
+            <li class="current"><a href="#/organisations">Organisations</a></li>
+        </ul>
+        <h3>Organisations</h3>
+        <div class="row" ng-repeat="organisation in organisations">
+            <div class="twelve columns">
+                <div class="panel">
+                    <h5><a href="#/organisation/{{organisation.slug}}">{{organisation.name}}</a></h5>
+                    <h6>2 Meeting Rooms</h6>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <div class="row">
+                            <div class="six columns">
+                                <p><strong>9am @ the board room</strong> just another meeting</p>
+                            </div>
+                            <div class="six columns">
+                                <div class="right">
+                                <img src="http://placehold.it/40x40&amp;text=[usr]">
+                                <img src="http://placehold.it/40x40&amp;text=[usr]">
+                                <img src="http://placehold.it/40x40&amp;text=[usr]">
+                                <img src="http://placehold.it/40x40&amp;text=[usr]">
+                                <img src="http://placehold.it/40x40&amp;text=[usr]">
+                                <img src="http://placehold.it/40x40&amp;text=[usr]">
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="inline-list">
+                            <li><a href="">Meeting details</li>
+                            <li><a href="">All Bookings</a></li>
+                            <li><a href="">Book this room</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+</div>
+<div class="row">
+    <div class="twelve columns">
+        <div class="panel">
+            <h5>Demonstration mode</h5>
+            <p>So have a <a href="#/organisation/demonstration">play!</a></p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="twelve columns">
+        <div class="panel callout">
+            <p><strong><a>Create</a></strong> a new organisation</p>
+        </div>
+    </div>
+</div>

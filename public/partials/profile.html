@@ -1,0 +1,53 @@
+<div class="row">
+    <ul class="breadcrumbs">
+        <li><a href="#/menu">Menu</a></li>
+        <li class="current"><a href="#/profile">Profile</a></li>
+    </ul>
+    <div class="twelve columns">
+        <h4>Profile</h4>
+    </div>
+</div>
+<!-- <form novalidate class="simple-form"> -->
+    <div class="row">
+        <div class="twelve columns">
+            <div class="row">
+                <div class="six columns">
+                    <label>First Name</label>
+                </div>
+                <div class="six columns">
+                    <input type="text" placeholder="First Name" ng-model="user.firstname" />
+                </div>    
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label>Last Name</label>
+                </div>
+                <div class="six columns">
+                    <input type="text" placeholder="Last Name" ng-model="user.lastname" />
+                </div>    
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label>Display</label>
+                </div>
+                <div class="six columns">
+                    <input type="text" placeholder="{{user.firstname}} {{user.lastname}}" ng-model="user.display" />
+                </div>    
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label>Email</label>
+                </div>
+                <div class="six columns">
+                    <input type="email" placeholder="Email" ng-model="user.email" disabled/>
+                </div>    
+            </div>
+        </div>
+         
+    </div>
+    <div class="row">
+        <div class="six columns offset-by-four">
+            <button class="button secondary" ng-click="reset()">RESET</button>
+            <button class="button" ng-click="update(user)">SAVE</button>
+        </div>
+    </div>

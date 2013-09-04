@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="crangular">
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+    <script src="/javascripts/crangularApp.js"></script>
+    <script src="/javascripts/controllers/applicationController.js"></script>
+    <script src="/javascripts/controllers/organisationsController.js"></script>
+    <script src="/javascripts/controllers/profileController.js"></script>
+    <script src="/javascripts/controllers/ventsController.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/foundation/foundation.min.css' />
+    <link rel="stylesheet" href="/fonts/foundation/general_foundicons.css">
+  </head>
+  <body>
+    <div ng-controller="HeaderCtrl" ng-include src="'partials/header.html'"></div>
+    <div ng-view></div>
+  </body>
+</html>

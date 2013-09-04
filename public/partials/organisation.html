@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="twelve columns">
+        <ul class="breadcrumbs">
+            <li><a href="#/menu"><i class="general foundicon-compass"></i></a></li>
+            <li><a href="#/organisations">Organisations</a></li>
+            <li class="current"><a href="#/organisation/{{id}}">Organisation</a></li>
+        </ul>
+        <h3>{{id}}</h3>
+        <dl class="tabs">
+            <dt>Organisation</dt>
+            <dd class="active"><a href="#/organisation/{{id}}">Details</a></dd>
+            <dd><a href="#/organisation/{{id}}/users">Users</a></dd>
+            <dd><a href="#/organisation/{{id}}/rooms">Rooms</a></dd>
+        </dl>   
+    </div>
+</div>
+<div class="row">
+    <div class="four columns">
+        <label>Name</label>
+    </div>
+    <div class="eight columns">
+        <input type="text" placeholder="Organisaion Name" ng-model="user.name" />
+    </div>
+</div>
+<div class="row">
+    <div class="four columns">
+        <label>Slug</label>
+    </div>
+    <div class="eight columns">
+        <input type="text" placeholder="one word lower case unique id" ng-model="user.slug" />
+    </div>
+</div>
+<div class="row">
+    <div class="eight columns offset-by-four">
+        <button class="button" ng-click="update(user)">Save</button>
+        <button class="button secondary" ng-click="reset()">Cancel</button>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/foundation/foundation.min.css' />
+    <link rel="stylesheet" href="/fonts/foundation/general_foundicons.css">
+  </head>
+  <body>
+    <div class="row">
+        <div class="twelve columns">
+            <h1>Configuration Login</h1>
+        </div>
+    </div>
+    <form class="simple-form" method="post" action="/configuration/login">
+        <div class="row">
+            <div class="four columns">
+                <label>Password</label>
+            </div>
+            <div class="eight columns">
+                <input type="password" placeholder="Configuration Password" name="password" value="" />
+            </div>    
+        </div>
+        <div class="row">
+            <div class="four columns">
+            </div>
+            <div class="eight columns">
+		        <input type="submit" class="small button" value="login" />
+                <a class="small secondary button" href="/" >cancel</a>
+            </div>    
+        </div>
+    </form>
+  </body>
+</html>
