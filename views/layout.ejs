@@ -26,7 +26,7 @@
                     <li <% if(page == "shopping") {%> class="active" <%}%>><a href="/shopping">Shopping</a></li>
                     <li <% if(page == "about") {%> class="active" <%}%>><a href="/about">About</a></li>
                 </ul>
-                <p class="navbar-text pull-right"><a href="/user" class="navbar-link">Signed in as <b>Some User</b></a></p>
+                <p class="navbar-text pull-right"><a href="/user" class="navbar-link">Signed in as <b><%= user.name %></b></a></p>
             </div>
         </nav>
         <div class="container">
